@@ -1,0 +1,40 @@
+Approach,Message ID,Host CPU Utilization (%),Host Memory Utilization (%),Telemetry Source
+No Admission Protection,ATTACK-01,15.9,86.0,local host via psutil; not UAV telemetry
+No Admission Protection,ATTACK-02,50.0,86.0,local host via psutil; not UAV telemetry
+No Admission Protection,ATTACK-03,0.0,86.0,local host via psutil; not UAV telemetry
+No Admission Protection,ATTACK-04,0.0,86.0,local host via psutil; not UAV telemetry
+No Admission Protection,ATTACK-05,0.0,86.0,local host via psutil; not UAV telemetry
+No Admission Protection,ATTACK-06,0.0,86.0,local host via psutil; not UAV telemetry
+No Admission Protection,ATTACK-07,0.0,86.0,local host via psutil; not UAV telemetry
+No Admission Protection,ATTACK-08,0.0,86.0,local host via psutil; not UAV telemetry
+No Admission Protection,ATTACK-09,0.0,86.0,local host via psutil; not UAV telemetry
+No Admission Protection,ATTACK-10,0.0,86.0,local host via psutil; not UAV telemetry
+No Admission Protection,EMERGENCY-01,0.0,86.0,local host via psutil; not UAV telemetry
+No Admission Protection,EMERGENCY-02,0.0,86.0,local host via psutil; not UAV telemetry
+No Admission Protection,EMERGENCY-03,0.0,86.0,local host via psutil; not UAV telemetry
+Rule-Based,ATTACK-01,0.0,86.0,local host via psutil; not UAV telemetry
+Rule-Based,ATTACK-02,0.0,86.0,local host via psutil; not UAV telemetry
+Rule-Based,ATTACK-03,0.0,86.0,local host via psutil; not UAV telemetry
+Rule-Based,ATTACK-04,0.0,86.0,local host via psutil; not UAV telemetry
+Rule-Based,ATTACK-05,0.0,86.0,local host via psutil; not UAV telemetry
+Rule-Based,ATTACK-06,0.0,86.0,local host via psutil; not UAV telemetry
+Rule-Based,ATTACK-07,0.0,86.0,local host via psutil; not UAV telemetry
+Rule-Based,ATTACK-08,0.0,86.0,local host via psutil; not UAV telemetry
+Rule-Based,ATTACK-09,0.0,86.0,local host via psutil; not UAV telemetry
+Rule-Based,ATTACK-10,0.0,86.0,local host via psutil; not UAV telemetry
+Rule-Based,EMERGENCY-01,0.0,86.0,local host via psutil; not UAV telemetry
+Rule-Based,EMERGENCY-02,0.0,86.0,local host via psutil; not UAV telemetry
+Rule-Based,EMERGENCY-03,0.0,86.0,local host via psutil; not UAV telemetry
+ML + PQC-Aware,ATTACK-01,0.0,86.0,local host via psutil; not UAV telemetry
+ML + PQC-Aware,ATTACK-02,18.8,86.0,local host via psutil; not UAV telemetry
+ML + PQC-Aware,ATTACK-03,37.5,86.0,local host via psutil; not UAV telemetry
+ML + PQC-Aware,ATTACK-04,12.5,86.0,local host via psutil; not UAV telemetry
+ML + PQC-Aware,ATTACK-05,22.2,86.0,local host via psutil; not UAV telemetry
+ML + PQC-Aware,ATTACK-06,20.0,86.0,local host via psutil; not UAV telemetry
+ML + PQC-Aware,ATTACK-07,11.1,86.0,local host via psutil; not UAV telemetry
+ML + PQC-Aware,ATTACK-08,7.7,86.0,local host via psutil; not UAV telemetry
+ML + PQC-Aware,ATTACK-09,12.5,86.0,local host via psutil; not UAV telemetry
+ML + PQC-Aware,ATTACK-10,12.5,85.9,local host via psutil; not UAV telemetry
+ML + PQC-Aware,EMERGENCY-01,25.0,85.8,local host via psutil; not UAV telemetry
+ML + PQC-Aware,EMERGENCY-02,12.5,85.8,local host via psutil; not UAV telemetry
+ML + PQC-Aware,EMERGENCY-03,12.5,85.8,local host via psutil; not UAV telemetry

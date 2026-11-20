@@ -1,0 +1,4 @@
+Approach,Attack Accepted,Attack Throttled,Attack Dropped,Final Buffer %,Emergency Delivered
+No Protection,10,0,0,239.2,0
+Rule-Based,3,7,0,95.62,1
+ML + PQC-Aware,0,1,9,71.58,3

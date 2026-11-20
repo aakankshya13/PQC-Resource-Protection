@@ -1,0 +1,40 @@
+Approach,Message ID,Ground Truth (evaluation only),traffic_rate,message_size,buffer_utilization,pqc_processing_time,resource_consumption,message_priority,network_available,Estimated Buffered Bytes,Model Prediction,Model Confidence,Decision,Reason
+No Admission Protection,ATTACK-01,Flooding,4.0,1181,0.0,0.0004,42.89,1,0,2297,NOT_USED,0.0,ACCEPT,no admission policy
+No Admission Protection,ATTACK-02,Flooding,8.0,641,45.94,0.0004,46.36900000000001,1,0,1757,NOT_USED,0.0,ACCEPT,no admission policy
+No Admission Protection,ATTACK-03,Flooding,12.0,552,81.08,0.0004,56.59133333333333,1,0,1668,NOT_USED,0.0,DROP,physical capacity/reservation
+No Admission Protection,ATTACK-04,Flooding,16.0,1286,81.08,0.0004,73.71799999999999,1,0,2402,NOT_USED,0.0,DROP,physical capacity/reservation
+No Admission Protection,ATTACK-05,Flooding,20.0,808,81.08,0.0004,62.56466666666667,1,0,1924,NOT_USED,0.0,DROP,physical capacity/reservation
+No Admission Protection,ATTACK-06,Flooding,24.0,777,81.08,0.0004,61.84133333333333,1,0,1893,NOT_USED,0.0,DROP,physical capacity/reservation
+No Admission Protection,ATTACK-07,Flooding,20.0,755,81.08,0.0004,61.328,1,0,1871,NOT_USED,0.0,DROP,physical capacity/reservation
+No Admission Protection,ATTACK-08,Flooding,20.0,669,81.08,0.0004,59.321333333333335,1,0,1785,NOT_USED,0.0,DROP,physical capacity/reservation
+No Admission Protection,ATTACK-09,Flooding,24.0,1281,81.08,0.0004,73.60133333333333,1,0,2397,NOT_USED,0.0,DROP,physical capacity/reservation
+No Admission Protection,ATTACK-10,Flooding,24.0,632,81.08,0.0004,58.458000000000006,1,0,1748,NOT_USED,0.0,DROP,physical capacity/reservation
+No Admission Protection,EMERGENCY-01,Emergency,4.0,49,81.08,0.0004,44.85466666666667,5,0,1165,NOT_USED,0.0,DROP,physical capacity/reservation
+No Admission Protection,EMERGENCY-02,Emergency,8.0,42,81.08,0.0004,44.69133333333334,5,0,1158,NOT_USED,0.0,DROP,physical capacity/reservation
+No Admission Protection,EMERGENCY-03,Emergency,12.0,48,81.08,0.0004,44.83133333333334,5,0,1164,NOT_USED,0.0,DROP,physical capacity/reservation
+Rule-Based,ATTACK-01,Flooding,4.0,1181,0.0,0.0004,42.89,1,0,2297,NOT_USED,0.0,DROP,message-size threshold
+Rule-Based,ATTACK-02,Flooding,8.0,641,0.0,0.0004,30.29,1,0,1757,NOT_USED,0.0,ACCEPT,rule thresholds passed
+Rule-Based,ATTACK-03,Flooding,12.0,552,35.14,0.0004,40.51233333333334,1,0,1668,NOT_USED,0.0,DROP,physical capacity/reservation
+Rule-Based,ATTACK-04,Flooding,16.0,1286,35.14,0.0004,57.638999999999996,1,0,2402,NOT_USED,0.0,DROP,observed rate threshold
+Rule-Based,ATTACK-05,Flooding,20.0,808,35.14,0.0004,46.48566666666667,1,0,1924,NOT_USED,0.0,DROP,observed rate threshold
+Rule-Based,ATTACK-06,Flooding,24.0,777,35.14,0.0004,45.76233333333334,1,0,1893,NOT_USED,0.0,DROP,observed rate threshold
+Rule-Based,ATTACK-07,Flooding,20.0,755,35.14,0.0004,45.249,1,0,1871,NOT_USED,0.0,DROP,observed rate threshold
+Rule-Based,ATTACK-08,Flooding,20.0,669,35.14,0.0004,43.242333333333335,1,0,1785,NOT_USED,0.0,DROP,observed rate threshold
+Rule-Based,ATTACK-09,Flooding,24.0,1281,35.14,0.0004,57.522333333333336,1,0,2397,NOT_USED,0.0,DROP,observed rate threshold
+Rule-Based,ATTACK-10,Flooding,24.0,632,35.14,0.0004,42.379,1,0,1748,NOT_USED,0.0,DROP,observed rate threshold
+Rule-Based,EMERGENCY-01,Emergency,4.0,49,35.14,0.0004,28.775666666666663,5,0,1165,NOT_USED,0.0,ACCEPT,critical priority override
+Rule-Based,EMERGENCY-02,Emergency,8.0,42,58.44,0.0004,36.76733333333333,5,0,1158,NOT_USED,0.0,ACCEPT,critical priority override
+Rule-Based,EMERGENCY-03,Emergency,12.0,48,81.6,0.0004,45.013333333333335,5,0,1164,NOT_USED,0.0,DROP,physical capacity/reservation
+ML + PQC-Aware,ATTACK-01,Flooding,4.0,1181,0.0,0.00012669998977798969,39.24599986370653,1,0,2297,NORMAL,0.66,ACCEPT,ML and resource checks passed
+ML + PQC-Aware,ATTACK-02,Flooding,8.0,641,45.94,0.00012669998977798969,42.724999863706536,1,0,1757,NORMAL,0.64,DROP,physical capacity/reservation
+ML + PQC-Aware,ATTACK-03,Flooding,12.0,552,45.94,0.00012669998977798969,40.64833319703987,1,0,1668,NORMAL,0.65,DROP,physical capacity/reservation
+ML + PQC-Aware,ATTACK-04,Flooding,16.0,1286,45.94,0.00012669998977798969,57.774999863706526,1,0,2402,SUSPICIOUS,0.51,DROP,model anomaly prediction
+ML + PQC-Aware,ATTACK-05,Flooding,20.0,808,45.94,0.00012669998977798969,46.6216665303732,1,0,1924,NORMAL,0.5,DROP,physical capacity/reservation
+ML + PQC-Aware,ATTACK-06,Flooding,24.0,777,45.94,0.00012669998977798969,45.89833319703987,1,0,1893,NORMAL,0.46,DROP,physical capacity/reservation
+ML + PQC-Aware,ATTACK-07,Flooding,20.0,755,45.94,0.00012669998977798969,45.38499986370653,1,0,1871,NORMAL,0.47,DROP,physical capacity/reservation
+ML + PQC-Aware,ATTACK-08,Flooding,20.0,669,45.94,0.00012669998977798969,43.378333197039865,1,0,1785,SUSPICIOUS,0.47,DROP,model anomaly prediction
+ML + PQC-Aware,ATTACK-09,Flooding,24.0,1281,45.94,0.00012669998977798969,57.658333197039866,1,0,2397,SUSPICIOUS,0.51,DROP,model anomaly prediction
+ML + PQC-Aware,ATTACK-10,Flooding,24.0,632,45.94,0.00012669998977798969,42.51499986370653,1,0,1748,SUSPICIOUS,0.49,DROP,model anomaly prediction
+ML + PQC-Aware,EMERGENCY-01,Emergency,4.0,49,45.94,0.00012669998977798969,28.911666530373193,5,0,1165,NORMAL,1.0,ACCEPT,critical priority override
+ML + PQC-Aware,EMERGENCY-02,Emergency,8.0,42,69.24,0.00012669998977798969,36.90333319703986,5,0,1158,NORMAL,1.0,ACCEPT,critical priority override
+ML + PQC-Aware,EMERGENCY-03,Emergency,12.0,48,92.4,0.00012669998977798969,45.14933319703987,5,0,1164,NORMAL,1.0,ACCEPT,critical priority override

@@ -1,0 +1,13 @@
+case_id,scenario,expected,traffic_rate,message_size,buffer_utilization,pqc_processing_time,resource_consumption,message_priority,network_available,predicted,confidence,prob_NORMAL,prob_RESOURCE_EXHAUSTION,prob_SUSPICIOUS,correct_for_designed_scenario,error_type
+N01,Normal low traffic,NORMAL,2,180,20,0.0003,20,3,1,NORMAL,1.0,1.0,0.0,0.0,True,
+N02,Normal moderate traffic,NORMAL,8,400,45,0.00035,35,3,1,NORMAL,1.0,1.0,0.0,0.0,True,
+N03,Legitimate traffic during congestion,NORMAL,9,450,88,0.00045,55,3,0,NORMAL,0.87,0.87,0.02,0.11,True,
+N04,Emergency message during congestion,NORMAL,4,350,90,0.00045,55,5,0,NORMAL,0.93,0.93,0.01,0.06,True,
+S01,Moderate flooding,SUSPICIOUS,18,700,70,0.00065,65,1,1,SUSPICIOUS,0.98,0.01,0.01,0.98,True,
+S02,High-rate flooding,SUSPICIOUS,35,900,85,0.0009,80,1,0,SUSPICIOUS,0.98,0.0,0.02,0.98,True,
+S03,Low-rate flooding,SUSPICIOUS,6,700,55,0.00045,45,1,1,NORMAL,0.63,0.63,0.07,0.3,False,FALSE_NEGATIVE
+S04,Burst after contact returns,SUSPICIOUS,24,500,65,0.0007,70,1,1,SUSPICIOUS,0.64,0.36,0.0,0.64,True,
+R01,High buffer and resource use,RESOURCE_EXHAUSTION,12,1200,96,0.0012,95,1,0,RESOURCE_EXHAUSTION,0.59,0.28,0.59,0.13,True,
+R02,Sustained resource exhaustion,RESOURCE_EXHAUSTION,28,1400,99,0.0014,98,1,0,RESOURCE_EXHAUSTION,0.87,0.0,0.87,0.13,True,
+R03,Large message under high load,RESOURCE_EXHAUSTION,16,1500,92,0.001,90,2,1,RESOURCE_EXHAUSTION,0.61,0.23,0.61,0.16,True,
+R04,High resource use at moderate rate,RESOURCE_EXHAUSTION,8,1000,95,0.0011,92,2,0,NORMAL,0.53,0.53,0.39,0.08,False,FALSE_NEGATIVE

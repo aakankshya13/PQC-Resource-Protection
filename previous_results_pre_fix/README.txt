@@ -1,0 +1,1 @@
+These CSVs are outputs from the run before the 14 October 2026 feature-window/timing corrections. They are retained for traceability only and must not be treated as results from the corrected script. Run ml_pqc_secure_dtn_experiment_v2.py to generate current result CSVs in the project root.

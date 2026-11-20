@@ -1,0 +1,4 @@
+Approach,Attack Attempted,Attack Admitted,Attack Throttled,Attack Dropped,Attack Delayed,Attack Rejected,Attack Not Admitted,Emergency Attempted,Emergency Admitted to Relay,Emergency Delayed,Emergency Dropped,Emergency Rejected,Emergency Not Admitted,Peak Buffer Utilization (%),Final Buffer Utilization (%),Total PQC Processing Time (s)
+No Protection,10,2,0,0,0,8,8,3,1,0,0,2,2,98.5,98.5,0.00921700001345016
+Rule-Based,10,2,0,0,8,0,8,3,1,2,0,0,2,98.5,98.5,0.0074346999754197896
+ML + PQC-Aware,10,1,6,3,0,0,9,3,2,1,0,0,1,92.60000000000001,92.60000000000001,0.008129600013489835

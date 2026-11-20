@@ -1,0 +1,8 @@
+Feature,Importance
+traffic_rate,0.2670672939947901
+buffer_utilization,0.19572477289204476
+resource_consumption,0.19305097478927102
+message_size,0.1648853753983775
+message_priority,0.11797736061190749
+pqc_processing_time,0.0575694125844264
+network_available,0.003724809729182751
